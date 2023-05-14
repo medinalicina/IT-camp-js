@@ -1,4 +1,4 @@
-const random = {
+/*const random = {
     broj: 25,
     godine: 29,
     ucenici: [
@@ -18,4 +18,4 @@ const random = {
 
 random.saySmor();
 
-const nasNiz = classroom.ucenici; 
+//const nasNiz = classroom.ucenici;*/

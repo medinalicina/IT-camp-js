@@ -40,3 +40,21 @@ const telefon = new Phone("IPhone", 128, "14 pro max");
 console.log(telefon);
 
 // class User ()
+const characters = {
+    Michael: { 
+      stats: { Health: 100, Stamina: 80 },
+      ability: "Slow Motion" 
+    },
+    Franklin: { 
+      stats: { Health: 90, Stamina: 95 },
+      ability: "Slow Motion Driving" 
+    },
+    Trevor: { 
+      stats: { Health: 80, Stamina: 70 },
+      ability: "Rage Mode" 
+    }
+  };
+  
+  function displayStatus(character, property) {
+    const characterInfo = characters[character];
+    if (characterInfo) {

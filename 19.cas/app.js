@@ -40,4 +40,4 @@ const novoJa = new Ja("medina", "licina", "16")
 console.log(novoJa);
 
 //geter nam sluzi da izvucemo osobinu iz propertija
-//seter radi suprotno neki argument setuje na neko drugo mesto
+//seter radi suprotno neki argument setuje na neko drugo mest

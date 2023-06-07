@@ -55,6 +55,4 @@ const characters = {
     }
   };
   
-  function displayStatus(character, property) {
-    const characterInfo = characters[character];
-    if (characterInfo) {
+  

@@ -23,8 +23,8 @@ const calcTotal = (arr) => {
         id : el.id,
         name: el.name,
         qty: el.qty 
-        price_per_unit:el.price_per_unit  
-        total :el.qty * el.price_per_unit,
+        price_per_unit: el.price_per_unit  
+        total: el.qty * el.price_per_unit,
     }
   })
 

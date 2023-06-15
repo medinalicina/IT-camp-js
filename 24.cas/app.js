@@ -8,3 +8,19 @@ const allCars = object.values(automobili);
 console.log(allCars)
 const drugiAutomobili = allCars.map((car) => [...car, car.length]);
 console.log(drugiAutomobili);
+
+printHello()
+// hello
+
+printDillion()
+// ReferenceError: printDillion is not defined
+
+function printHello() {
+  console.log('hello')
+
+  function printDillion() {
+    console.log("dillion")
+  }
+}
+
+//kada stavimo let onda ce ona da je podigne na vrh, isto tako i sa const

@@ -23,4 +23,4 @@ function printHello() {
   }
 }
 
-//kada stavimo let onda ce ona da je podigne na vrh, isto tako i sa const
+//kada stavimo let onda ce ona da je podigne na vrh, isto tako i sa const 

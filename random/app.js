@@ -39,4 +39,35 @@ const calcTotal = (arr) => {
 
 console.log(calcTotal(products))
 
+const nekiNiz = [1,3,5,7,9];
+const sumNumbers = (nekiNiz) => {
+    let start = 0;
+    for (let i = 0; i < nekiNiz.length; i++) {
+       start += nekiNiz[i];
+}
+  return start;
+};
+console.log(sumNumbers(nekiNiz));
 
+
+let numbers = [1,3,5,7,9];
+for (let i = 0; i < 10; i++){
+    if(i %2 === 0 && i !==0){
+        numbers.push(i);
+    }
+}
+console.log(numbers);
+console.log(numbers.reverse());
+
+
+if (ucenik1godine > ucenik2godine && ucenik1godine > ucenik3godine) {
+  if (ucenik2godine > ucenik3godine) {
+    console.log(
+      `${ucenik1} je stariji od ${ucenik2}, a ${ucenik2} je stariji od ${ucenik3}`
+    );
+  } else {
+    console.log(
+      `${ucenik1} je stariji od ${ucenik3}a, a ${ucenik3} je stariji od ${ucenik2}a`
+    );
+  }
+}

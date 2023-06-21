@@ -62,4 +62,22 @@ for (let i = 0; i < duzina; i++) {
   }
 }
 console.log(brojac);
+let a = 15;
+ console.log(a);
+ a++;
+ console.log(a);
+ a--;
+ console.log(a);
+ a = a + 5;
+ a += 5;
+ console.log(a);
 
+ let b = 10;
+
+ for (let i = 0; i < 10; i++) {
+   //   console.log("OVO JE PETLJA", i);
+   console.log(b, "default");
+   b += 2;
+   console.log(b, "petlja");
+   console.log(i);
+ }

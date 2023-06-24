@@ -103,7 +103,23 @@ let nizNizova = [
   console.log(a.contact(b))*/
 
 
-
+  function sqrNum(number1){
+    return number1 * number1
+    let square = number1 * number1;
+    return square;
+}
+const nekaFunkcija = function (){
+    console.log("ovo je neki namles function")
+}
+//nekaFunkcija()
+const celzijusufahrenheit = function(broj){
+    return broj * 1.8 + 32
+};
+console.log(celzijusufahrenheit)
+const fahrenheitucelzijuse = function(broj){
+    return ((broj - 32)*5 /9;
+}
+celzijusufahrenheit()
 
 
 

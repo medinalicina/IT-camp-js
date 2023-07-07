@@ -133,3 +133,4 @@ console.log("immediate logging");
 // produces output in this order:
 // immediate logging
 // asynchronous logging has val: 777
+

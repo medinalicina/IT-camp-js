@@ -44,7 +44,7 @@ console.log(recenica0.toLowerCase());
  // "danas je veoma lep dan, pun obaveza";
 
 
- /* let novaRecenica = "";
+ let novaRecenica = "";
 for (let i = 0; i < recenica.length; i++) {
   if (i === recenica.length-1) {
     novaRecenica += recenica[i].toUpperCase();
@@ -54,11 +54,11 @@ for (let i = 0; i < recenica.length; i++) {
     novaRecenica += recenica[i];
 }
 }
-console.log(novaRecenica)*/
+console.log(novaRecenica)
 
 
 //napravi funkciju koja broji slova u recenici.
-/*let recenica = "Omare jesi li spremio test ?";
+let recenica = "Omare jesi li spremio test ?";
 const duzina = recenica.length;
 let novaRecenica = 0
 let brojac = 0;
@@ -68,9 +68,9 @@ for (let i = 0; i < duzina; i++) {
     brojac++;
   }
 }
-console.log(brojac);*/
+console.log(brojac);
 
-/*const brojevi = [6, 5, 27, 28, 29, 31, 33, 15];
+const brojevi = [6, 5, 27, 28, 29, 31, 33, 15];
 
 const neparniBrojevi = brojevi.filter((el) => el % 2 === 0);
 
@@ -127,7 +127,7 @@ console.log(filtriranereci);*/
 const filtriranibrojevi = neki.nekiBrojevi.filter(function(nekiBrojevi){
     return nekiBrojevi.length > 0;
 });
-console.log(filtriranibrojevi);*/
+console.log(filtriranibrojevi);
 
 /*const = [
   [12, 5, 8],

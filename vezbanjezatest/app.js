@@ -58,8 +58,7 @@ ourArray.unshift("Happy");
  // .length metoda nam sluzi za dobijanje duzine stringa 
  // Postoje 3 metode za ekstraktovanje (uzimanje dela) stringa: 
  // 1. slice(start, end) end nije ukljucen u opseg. 
- // 2. substring(start, end) razlika u odnosu na slice je da substring ne 
- // prihvata negativne indekse. 
+ // 2. substring(start, end) razlika u odnosu na slice je da substring nejeste to sto  prihvata negativne indekse. 
  // 3. substr(start, length) 
  // replace() metoda vrsi zamenu nekoliko karaktera datog stringa. Ima 2 argumenta. Po defaultu replace() metoda menja samo prvo pronalazenje datog stringa. 
  // concat() metoda vrsi spajanje dva ili vise stringova. 
@@ -297,4 +296,25 @@ Na taj način, originalna rečenica se prolazi karakter po karakter, a samoglasn
 
 
 
-mozete li vi da mi objasnite cemu bese sluzi ===
+
+
+
+
+
+
+//TEORIJA
+let tekst = "Dobro jutro svima!";
+let zamijeni = "jutro";
+let zamjena = "veče";
+
+let rezultat = tekst.replace(zamijeni, zamjena);
+console.log(rezultat); // Ispis: Dobro veče svima!
+//OVO JE FUNKCIJA REPLACE KOJA MENJA JEDAN ARGUMENT ZA NEKI DRUGI DATI ARGUMENT!
+
+let string1 = "Dobro";
+let string2 = "jutro";
+let string3 = "svima";
+
+let spojeniString = string1.concat(" ", string2, " ", string3);
+console.log(spojeniString); // Ispis: Dobro jutro svima
+// OVO JE METODA CONCAT.concat() metoda vrsi spajanje dva ili vise stringova. 

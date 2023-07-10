@@ -168,3 +168,12 @@ const fetchData = () => {
   };
   
    fetchData();
+
+   fetch('https://dummyjson.com/carts')
+// .then(res => res.json())
+// .then((json) => {
+//          console.log(json.products);
+//          return json.carts.map((el)=> el.products.filter((nesto) => nesto.total>= 555));
+//      })
+
+//     .then((data) => console.log(data));

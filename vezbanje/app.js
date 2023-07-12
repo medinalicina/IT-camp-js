@@ -46,4 +46,37 @@ function kolikoMalih(recenica) {
     
     
     
-    
+    let nekaMatrica = [ 
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ];
+  console.log(nekaMatrica);
+  for (let i = 0; i < nekaMatrica.length; i++) {
+      for (let j = 0; j < nekaMatrica[i].length; j++) {
+        if(i + j === 2){ 
+        console.log();
+     }
+    }
+  }
+
+
+
+
+
+ for (let i = 0; i < nekaMatrica.length; i++) {
+  
+ console.log(matrica[i][i]);
+}  
+for (let i = 0; i < matrica.length; i++) {
+  for (let j = 0; j < matrica[i].length; j++) {
+    console.log(matrica[i][j]);
+ }
+}
+
+
+do{
+  console.log("broj manji od 10", "DO");
+  i++
+}while(i < 10);
+

@@ -153,7 +153,38 @@ ourArray.unshift("Happy");
  // Postoji built-in metoda u JavaScriptu koja proverava a li je neki broj Integer (ceo): 
  // Number.isInteger();
 
-Closure je koncept u JavaScriptu koji se odnosi na sposobnost funkcije da pristupa i pamti vrednosti van svojih sopstvenih okvira (scope-a). Kada se funkcija kreira, ona zadržava pristup svim promenljivima i parametrima koji su bili dostupni u trenutku njenog kreiranja. Closure se često koristi za implementaciju privatnih promenljivih i enkapsulaciju u JavaScriptu.
+//Closure je koncept u JavaScriptu koji se odnosi na sposobnost funkcije da pristupa i pamti vrednosti van svojih sopstvenih okvira (scope-a). Kada se funkcija kreira, ona zadržava pristup svim promenljivima i parametrima koji su bili dostupni u trenutku njenog kreiranja. Closure se često koristi za implementaciju privatnih promenljivih i enkapsulaciju u JavaScriptu.
+
+// Map, Filter i Reduce: Ovo su tri metode dostupne za manipulaciju i obradu elemenata u JavaScript nizovima:
+
+// Map: Metoda map() se koristi za stvaranje nove niza transformiranjem svakog elementa izvornog niza. Primjenjuje se funkcija na svaki element niza i vraća novi niz s rezultatima.
+
+// Primjer map() 
+
+
+// let brojevi = [1, 2, 3, 4, 5];
+// let kvadrati = brojevi.map((broj) => broj * broj);
+// console.log(kvadrati); // Ispis: [1, 4, 9, 16, 25]
+// //Filter:
+//  Metoda filter() se koristi za filtriranje elemenata izvornog niza na temelju određenog uvjeta. Vraća novi niz koji sadrži samo one elemente koji zadovoljavaju uvjet.
+
+// Primjer filter() 
+
+
+// let brojevi = [1, 2, 3, 4, 5];
+// let parniBrojevi = brojevi.filter((broj) => broj % 2 === 0);
+// console.log(parniBrojevi); // Ispis: [2, 4]
+// Reduce: Metoda reduce() se koristi za smanjenje niza na jednu vrijednost primjenom funkcije akumulatora na sve elemente niza. Akumulator prati trenutno stanje nakon svake iteracije.
+
+// Primjer reduce() 
+
+
+// let brojevi = [1, 2, 3, 4, 5];
+// let zbroj = brojevi.reduce((akumulator, broj) => akumulator + broj, 0);
+// console.log(zbroj); // Ispis: 15
+// U primjerima se koriste funkcije lambda (strelica) za jednostavno izražavanje operacija koje se primjenjuju na svaki element.
+
+// Ove metode (map, filter i reduce) su korisne za obradu i manipulaciju podataka u JavaScript nizovima na deklarativan način.
 
 
 
@@ -161,28 +192,26 @@ Closure je koncept u JavaScriptu koji se odnosi na sposobnost funkcije da pristu
 
 
 
+// PRVI ZADATAK*/
+//  let a=+prompt("unesite neki broj")
 
+// if (isNaN(a)) {
+//     console.log("Uneta vrednost mora biti broj")
+// } else {
+//     console.log(a*a)
+// }
 
-PRVI ZADATAK*/
- let a=+prompt("unesite neki broj")
+// objasnjene zadatka break.1
 
-if (isNaN(a)) {
-    console.log("Uneta vrednost mora biti broj")
-} else {
-    console.log(a*a)
-}
+// Kod koji ste naveli koristi funkciju `prompt()` za unos broja od korisnika. Evo detaljnog objašnjenja:
 
-objasnjene zadatka break.1
+// 1. `let a = +prompt("unesite neki broj")`: Ova linija koda koristi funkciju `prompt()` za prikazivanje dijaloga gde korisnik može uneti broj. Uneti broj se dodeljuje promenljivoj `a`. Ovde se koristi unarni operator `+` ispred `prompt()` kako bi se konvertovao uneseni tekst u broj.
 
-Kod koji ste naveli koristi funkciju `prompt()` za unos broja od korisnika. Evo detaljnog objašnjenja:
+// 2. `if (isNaN(a)) { console.log("Uneta vrednost mora biti broj") }`: Ova linija koda proverava da li uneta vrednost, koja je dodeljena promenljivoj `a`, nije broj. `isNaN()` funkcija se koristi za proveru da li vrednost nije broj (NaN - Not-a-Number). Ako je uneta vrednost nije broj, ispisuje se poruka "Uneta vrednost mora biti broj".
 
-1. `let a = +prompt("unesite neki broj")`: Ova linija koda koristi funkciju `prompt()` za prikazivanje dijaloga gde korisnik može uneti broj. Uneti broj se dodeljuje promenljivoj `a`. Ovde se koristi unarni operator `+` ispred `prompt()` kako bi se konvertovao uneseni tekst u broj.
+// 3. `else { console.log(a*a) }`: Ako uneta vrednost jeste broj, izvršava se ovaj blok koda. `a*a` računa kvadrat unete vrednosti `a`, a rezultat se prikazuje na konzoli pomoću `console.log()`.
 
-2. `if (isNaN(a)) { console.log("Uneta vrednost mora biti broj") }`: Ova linija koda proverava da li uneta vrednost, koja je dodeljena promenljivoj `a`, nije broj. `isNaN()` funkcija se koristi za proveru da li vrednost nije broj (NaN - Not-a-Number). Ako je uneta vrednost nije broj, ispisuje se poruka "Uneta vrednost mora biti broj".
-
-3. `else { console.log(a*a) }`: Ako uneta vrednost jeste broj, izvršava se ovaj blok koda. `a*a` računa kvadrat unete vrednosti `a`, a rezultat se prikazuje na konzoli pomoću `console.log()`.
-
-Ukratko, kod koristi funkciju `prompt()` za unos broja od korisnika. Ako je uneta vrednost broj, ispisuje se kvadrat unete vrednosti. Ako uneta vrednost nije broj, ispisuje se poruka da mora biti unet broj.
+// Ukratko, kod koristi funkciju `prompt()` za unos broja od korisnika. Ako je uneta vrednost broj, ispisuje se kvadrat unete vrednosti. Ako uneta vrednost nije broj, ispisuje se poruka da mora biti unet broj.
 
 
 
@@ -194,17 +223,17 @@ Ukratko, kod koristi funkciju `prompt()` za unos broja od korisnika. Ako je unet
 
 
 // DRUGI ZADATAK
- for (i=1;i<=100;i++) {
-    if (i%3===0 && i%5===0) {
-       console.log("FIZZ BUZZ")}
-  else if (i%3===0) {
-       console.log("FIZZ")
-   } else if (i%5===0) {
-       console.log("BUZZ")
-   } 
+//  for (i=1;i<=100;i++) {
+//     if (i%3===0 && i%5===0) {
+//        console.log("FIZZ BUZZ")}
+//   else if (i%3===0) {
+//        console.log("FIZZ")
+//    } else if (i%5===0) {
+//        console.log("BUZZ")
+//    } 
 
-   else console.log(i)
-}
+//    else console.log(i)
+
 /*Cilj problema je da se ispise niz brojeva od 1 do 100, ali umesto brojeva koji su deljivi sa 3 ispisuje se "FIZZ", umesto brojeva koji su deljivi sa 5 ispisuje se "BUZZ", a umesto brojeva koji su deljivi i sa 3 i sa 5 ispisuje se "FIZZ BUZZ".
 
 Sada ću detaljno objasniti kako funkcioniše ovaj kod:
@@ -243,8 +272,7 @@ i tako dalje, sve do 100.
 
 
 
-
-Regenerate response*/
+Regenerate response
 
 
 
@@ -318,3 +346,6 @@ let string3 = "svima";
 let spojeniString = string1.concat(" ", string2, " ", string3);
 console.log(spojeniString); // Ispis: Dobro jutro svima
 // OVO JE METODA CONCAT.concat() metoda vrsi spajanje dva ili vise stringova. 
+
+
+

@@ -8,7 +8,9 @@
     else if( i % 3 === 0  && i % 5 === 0){
         console.log("fizz");
     }*/
-    
+    //deljiv sa 3 da pise fizz deljiv sa 5 da pise buzz a sa oba da pise fizzbuzz
+//for(let )
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /*let b=15;
 if(b>7){
@@ -45,131 +47,52 @@ switch(a){
         console.log("a nije ni 3 ni 7");
         break;
 }*/
-let a = 20;
-let b = 5;
-let stepen =  20 / 5;
-console.log(20 / 5);
-//  1.5  ** operator stepenovanja
+// let a = 20;
+// let b = 5;
+// let stepen =  20 / 5;
+// console.log(20 / 5);
+// //  1.5  ** operator stepenovanja
 
-let recenica = "Omare jesi li spremio test ?";
-const duzina = recenica.length;
-let novaRecenica = 0
-let brojac = 0;
-for (let i = 0; i < duzina; i++) {
-  if (recenica[i] !== " ") {
-    novaRecenica += recenica[i];
-    brojac++;
-  }
-}
-console.log(brojac);
-let a = 15;
- console.log(a);
- a++;
- console.log(a);
- a--;
- console.log(a);
- a = a + 5;
- a += 5;
- console.log(a);
+// let recenica = "Omare jesi li spremio test ?";
+// const duzina = recenica.length;
+// let novaRecenica = 0
+// let brojac = 0;
+// for (let i = 0; i < duzina; i++) {
+//   if (recenica[i] !== " ") {
+//     novaRecenica += recenica[i];
+//     brojac++;
+//   }
+// }
+// console.log(brojac);
+// let a = 15;
+//  console.log(a);
+//  a++;
+//  console.log(a);
+//  a--;
+//  console.log(a);
+//  a = a + 5;
+//  a += 5;
+//  console.log(a);
 
- let b = 10;
+//  let b = 10;
 
- for (let i = 0; i < 10; i++) {
-   //   console.log("OVO JE PETLJA", i);
-   console.log(b, "default");
-   b += 2;
-   console.log(b, "petlja");
-   console.log(i);
- }
-
-
+//  for (let i = 0; i < 10; i++) {
+//   console.log("OVO JE PETLJA", i);
+//    console.log(b, "default");
+//    b += 2;
+//    console.log(b, "petlja");
+//    console.log(i);
+//  }
 
 
- const inputText = document.getElementById("inputText");
-const addButon = document.getElementById("addButon");
-const inputContainer = document.getElementById("inputContainer");
-const tasks = document.getElementById("tasks");
 
-let vrednost = "";
 
-console.log(tasks.children);
+//  const inputText = document.getElementById("inputText");
+// const addButon = document.getElementById("addButon");
+// const inputContainer = document.getElementById("inputContainer");
+// const tasks = document.getElementById("tasks");
 
-function singleCard(text) {
-  const kartica = document.createElement("div");
-  kartica.classList.add("task");
+// let vrednost = "";
 
-  const hatri = document.createElement("h3");
-  hatri.innerText = text;
+// console.log(tasks.children);
 
-  const checkInput = document.createElement("input");
-  checkInput.type = "checkbox";
-
-  checkInput.addEventListener("change", () => {
-    console.log("promenjeno");
-    // const veciDiv = checkInput.
-  });
-
-  kartica.appendChild(hatri);
-  kartica.appendChild(checkInput);
-
-  return kartica;
-}
-
-console.log(inputText);
-console.log(inputContainer);
-inputText.addEventListener("input", (e) => {
-  vrednost = e.target.value;
-});
-
-addButon.addEventListener("click", (e) => {
-  e.preventDefault();
-  // console.log(vrednost);
-  inputText.value = "";
-  // console.log(tasks.children);
-
-  tasks.appendChild(singleCard(vrednost));
-});
-const inputText = document.getElementById("inputText");
-const addButon = document.getElementById("addButon");
-const inputContainer = document.getElementById("inputContainer");
-const tasks = document.getElementById("tasks");
-
-let vrednost = "";
-
-console.log(tasks.children);
-
-function singleCard(text) {
-  const kartica = document.createElement("div");
-  kartica.classList.add("task");
-
-  const hatri = document.createElement("h3");
-  hatri.innerText = text;
-
-  const checkInput = document.createElement("input");
-  checkInput.type = "checkbox";
-
-  checkInput.addEventListener("change", () => {
-    console.log("promenjeno");
-    // const veciDiv = checkInput.
-  });
-
-  kartica.appendChild(hatri);
-  kartica.appendChild(checkInput);
-
-  return kartica;
-}
-
-console.log(inputText);
-console.log(inputContainer);
-inputText.addEventListener("input", (e) => {
-  vrednost = e.target.value;
-});
-
-addButon.addEventListener("click", (e) => {
-  e.preventDefault();
-  // console.log(vrednost);
-  inputText.value = "";
-  // console.log(tasks.children);
-
-  tasks.appendChild(singleCard(vrednost));
-});

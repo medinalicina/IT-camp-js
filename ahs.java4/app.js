@@ -14,6 +14,7 @@ const fetchingData = async() => {
     
  }
 // fetchingData();
+// ? sluzi da odredimo osobinu neke baze & ovo stavimo da bi mu rekli sta da odradi
 //da bi prosledili argument moramo da napravimo da ga funk prihvati
 // & dodavanje nekog parametra kako bi se naslo ono sto trazomp queri params, 
 const fetchingData = async(comm) => {

@@ -65,32 +65,32 @@
 
 
 
-const nekiNiz = [1, 2, 3, 4, 5];
-nekiNiz.map((el)=> el + 3);
-const customMap  = (array, callbackFunkcija) => {
-  const nerArray = [];
-  for (let i = 0; i < array.length; i++)
-{
-  newArray.push(callbackFunkcija(array[i]));
-}
-return newArray;
-};
+// const nekiNiz = [1, 2, 3, 4, 5];
+// nekiNiz.map((el)=> el + 3);
+// const customMap  = (array, callbackFunkcija) => {
+//   const nerArray = [];
+//   for (let i = 0; i < array.length; i++)
+// {
+//   newArray.push(callbackFunkcija(array[i]));
+// }
+// return newArray;
+// };
 
 
-function addTri () {
-  return el + 3;
-}
- console.log(customMap(nekiNiz, addTri));
+// function addTri () {
+//   return el + 3;
+// }
+//  console.log(customMap(nekiNiz, addTri));
 
- function smanji(broj) {
-  if (broj === 1) return;
-  broj--;
-  console.log(broj);
-  smanji(broj);
- }
+//  function smanji(broj) {
+//   if (broj === 1) return;
+//   broj--;
+//   console.log(broj);
+//   smanji(broj);
+//  }
 
- let nesto = 30;
- smanji(nesto);
+//  let nesto = 30;
+//  smanji(nesto);
 
 const niz = [
 [4, 12, 100, 3],
@@ -99,10 +99,32 @@ const niz = [
 [3],
 [4]
 ];
+const paarniBrojevi = [];
 for (let i = 0; i < niz.length; i++) {
-  const noviNiz = [];
-  if (niz[i] % 2 === 0){
-    noviNiz.push(niz[i]); 
+  for(let j = 0; j < niz[i].length; j++){ 
+  if (niz[i][j] % 2 === 0){
+    paarniBrojevi.push(niz[i][j]); 
   }
 }
-console.log();
+}
+console.log(paarniBrojevi);
+
+
+const user = {
+  ime: "Medina",
+  prezime: "Licina",
+  nekaOsobina: [1, 2, 4, "los"],
+  vestine:{
+    html: "prilicno dobro",
+    css: "onako",
+    js: "kriticno",
+  },
+};
+
+osoba.name;
+osoba.prezime;
+
+osoba.nekaOsobina[3];
+osoba.vestine.js;
+console.log(osoba.vestine.css);
+//petlje, map i filter,  da se napravi metoda unutar objekta i fecanje podataka, da nam neki broj , var let i konst, razlika izmedju funkcije i metode, closure hoisting, razlika imedju === i ==  ; === uporedjuje i vr3ednost i tip podataka

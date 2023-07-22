@@ -136,7 +136,7 @@ ourArray.unshift("Happy");
  // map() metoda kreira novi niz (iste duzine) sa logikom predstavljenom unutar callback funkcije unutar date metode. 
  // filter() metoda kreira novi niz sa onim elementima koji su prosli test. Novodobijeni niz moze imati maksimalno elemenata kao niz na koji se primenjuje metoda, takodje moze biti prazan niz. 
  // reduce() metoda vraca jednu vrednost. Iteracija se vrsi kroz ceo niz. 
- // every() metoda proverava da li su svi elementi niza zadovoljili uslov.  (vraca boolean) 
+ // every() metoda proverava da li su svi elementi niza zadovoljili uslov.  (vraca boolean true ili falsy vrednosti) 
  // some() metoda proverava da li bar jedan element niza zadovoljava uslov. (vraca boolean) 
  // find() metoda vraca vrednost prvog elementa koji je prosao test funkcije. 
  // findIndex() metoda vraca index prvog elementa koji je zadovoljio uslov. 
@@ -147,12 +147,12 @@ ourArray.unshift("Happy");
  // Object.seal(obj) čini objekat promenljivim s tim što nema mogućnost dodavanja(brisanja) novih svojstava i metoda. 
  // Object.keys(obj) vraća niz ključeva 
  // Object.entries(obj) vraća niz nizova. 
- // call() metoda za prvi argument ima objekat na koji se primenjuje, ostali argumenti metode koja se izvrsava. 
+ // call() metoda koja poziva funkciju sa odredjenim elementima. za prvi argument ima objekat na koji se primenjuje, ostali argumenti metode koja se izvrsava. 
  // apply() metoda za prvi argument ima objekat na koji se primenjuje, drugi argument je niz gde smestamo argumente metode koja se izvrsava, 
  // bind() zahteva prethodno definisanje promenljive (funkcije) za odredjeni objekat, pa onda pozivanje funkcije sa eventualnim argumentima. 
  // Postoji built-in metoda u JavaScriptu koja proverava a li je neki broj Integer (ceo): 
  // Number.isInteger();
-
+ //Constructor je metoda koja se poziva prilikom stvaranja novog objekta iz klase. Ona postavlja početne vrijednosti svojstava objekta. U vašem slučaju, constructor postavlja ime, prezime, posao, kredit i hobi korisnika.
 //Closure je koncept u JavaScriptu koji se odnosi na sposobnost funkcije da pristupa i pamti vrednosti van svojih sopstvenih okvira (scope-a). Kada se funkcija kreira, ona zadržava pristup svim promenljivima i parametrima koji su bili dostupni u trenutku njenog kreiranja. Closure se često koristi za implementaciju privatnih promenljivih i enkapsulaciju u JavaScriptu.
 
 // Map, Filter i Reduce: Ovo su tri metode dostupne za manipulaciju i obradu elemenata u JavaScript nizovima:
@@ -201,7 +201,7 @@ ourArray.unshift("Happy");
 //     console.log(a*a)
 // }
 
-// objasnjene zadatka break.1
+// objasnjene zadatka broj.1
 
 // Kod koji ste naveli koristi funkciju `prompt()` za unos broja od korisnika. Evo detaljnog objašnjenja:
 
@@ -212,7 +212,6 @@ ourArray.unshift("Happy");
 // 3. `else { console.log(a*a) }`: Ako uneta vrednost jeste broj, izvršava se ovaj blok koda. `a*a` računa kvadrat unete vrednosti `a`, a rezultat se prikazuje na konzoli pomoću `console.log()`.
 
 // Ukratko, kod koristi funkciju `prompt()` za unos broja od korisnika. Ako je uneta vrednost broj, ispisuje se kvadrat unete vrednosti. Ako uneta vrednost nije broj, ispisuje se poruka da mora biti unet broj.
-
 
 
 
@@ -346,6 +345,4 @@ let string3 = "svima";
 let spojeniString = string1.concat(" ", string2, " ", string3);
 console.log(spojeniString); // Ispis: Dobro jutro svima
 // OVO JE METODA CONCAT.concat() metoda vrsi spajanje dva ili vise stringova. 
-
-
 

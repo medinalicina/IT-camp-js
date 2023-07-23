@@ -261,3 +261,139 @@ const fetchingData = async () => {
         console.log(result);
         
      }
+     const dog = new Dog("Buddy", 3, "Labrador");
+    dog.makeSound();  // Output: "Dog barks."
+    dog.fetch();      // Output: "Dog fetches the ball."
+    console.log(dog.name); // Output: "Buddy"
+    console.log(dog.age);  // Output: 3
+    console.log(dog.breed); // Output: "Labrador"
+    class BankAccount {
+      constructor(accountNumber, balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+      }
+    
+      deposit(amount) {
+        this.balance += amount;
+      }
+    
+      withdraw(amount) {
+        if (amount <= this.balance) {
+          this.balance -= amount;
+        } else {
+          console.log("Insufficient funds.");
+        }
+      }
+    
+      getBalance() {
+        return this.balance;
+      }
+    }
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(res => res.json())
+    .then((json) => {
+             console.log(json.products);
+             return json.carts.map((el)=> el.products.filter((nesto) => nesto.total>= 555));
+         })
+    
+        .then((data) => console.log(data));
+    const fetchingData = async() => {
+        let nekiBr = prompt("unesite neki broj");
+        const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${nekiBr}/comments`);
+        const result = await data.json();
+        console.log(result);
+        
+     }
+
+
+     const dog = new Dog("Buddy", 3, "Labrador");
+    dog.makeSound();  // Output: "Dog barks."
+    dog.fetch();      // Output: "Dog fetches the ball."
+    console.log(dog.name); // Output: "Buddy"
+    console.log(dog.age);  // Output: 3
+    console.log(dog.breed); // Output: "Labrador"
+    class BankAccount {
+      constructor(accountNumber, balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+      }
+    
+      deposit(amount) {
+        this.balance += amount;
+      }
+    
+      withdraw(amount) {
+        if (amount <= this.balance) {
+          this.balance -= amount;
+        } else {
+          console.log("Insufficient funds.");
+        }
+      }
+    
+      getBalance() {
+        return this.balance;
+      }
+    }
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(res => res.json())
+    .then((json) => {
+             console.log(json.products);
+             return json.carts.map((el)=> el.products.filter((nesto) => nesto.total>= 555));
+         })
+    
+        .then((data) => console.log(data));
+    const fetchingData = async() => {
+        let nekiBr = prompt("unesite neki broj");
+        const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${nekiBr}/comments`);
+        const result = await data.json();
+        console.log(result);
+        
+     }
+
+
+     const dog = new Dog("Buddy", 3, "Labrador");
+    dog.makeSound();  // Output: "Dog barks."
+    dog.fetch();      // Output: "Dog fetches the ball."
+    console.log(dog.name); // Output: "Buddy"
+    console.log(dog.age);  // Output: 3
+    console.log(dog.breed); // Output: "Labrador"
+    class BankAccount {
+      constructor(accountNumber, balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+      }
+    
+      deposit(amount) {
+        this.balance += amount;
+      }
+    
+      withdraw(amount) {
+        if (amount <= this.balance) {
+          this.balance -= amount;
+        } else {
+          console.log("Insufficient funds.");
+        }
+      }
+    
+      getBalance() {
+        return this.balance;
+      }
+    }
+
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(res => res.json())
+    .then((json) => {
+             console.log(json.products);
+             return json.carts.map((el)=> el.products.filter((nesto) => nesto.total>= 555));
+         })
+    
+        .then((data) => console.log(data));
+    const fetchingData = async() => {
+        let nekiBr = prompt("unesite neki broj");
+        const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${nekiBr}/comments`);
+        const result = await data.json();
+        console.log(result);
+        
+     }

@@ -187,7 +187,7 @@ ourArray.unshift("Happy");
 // Ove metode (map, filter i reduce) su korisne za obradu i manipulaciju podataka u JavaScript nizovima na deklarativan način.
 
 
-
+// string float booelan 
 
 
 

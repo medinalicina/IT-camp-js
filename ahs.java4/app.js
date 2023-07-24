@@ -13,6 +13,14 @@
 //     console.log(result);
     
 //  }
+undefined || true
+null || true
+0 || true
+-0 || true
+'' || true
+false || true
+0n || true
+NaN || true
 // // fetchingData();
 // // ? sluzi da odredimo osobinu neke baze & ovo stavimo da bi mu rekli sta da odradi
 // //da bi prosledili argument moramo da napravimo da ga funk prihvati
@@ -189,7 +197,7 @@ const fetchingData = async () => {
     //   .then((response) => response.json())
     //   .then((json) => console.log(json))
     //   .catch((er) => console.log(er, "OVO JE ERORRRRRRRRRRRRRRRRRRRRRRRRRR"));
-    
+  }
     class Animal {
       constructor(name, age) {
         this.name = name;
@@ -397,3 +405,15 @@ const fetchingData = async () => {
         console.log(result);
         
      }
+     const prviPromis = new Promise((res, rej) => {
+  let age = prompt("Unesite broj godina");
+  setTimeout(() => {
+    if (+age >= 18) {
+      res(+age);
+    } else {
+      rej(+age);
+    }
+    // res("foo");
+    // rej("greskaa");
+  }, 1000);
+});

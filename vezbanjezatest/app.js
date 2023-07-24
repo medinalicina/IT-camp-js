@@ -192,26 +192,6 @@ ourArray.unshift("Happy");
 
 
 
-// PRVI ZADATAK*/
-//  let a=+prompt("unesite neki broj")
-
-// if (isNaN(a)) {
-//     console.log("Uneta vrednost mora biti broj")
-// } else {
-//     console.log(a*a)
-// }
-
-// objasnjene zadatka broj.1
-
-// Kod koji ste naveli koristi funkciju `prompt()` za unos broja od korisnika. Evo detaljnog objašnjenja:
-
-// 1. `let a = +prompt("unesite neki broj")`: Ova linija koda koristi funkciju `prompt()` za prikazivanje dijaloga gde korisnik može uneti broj. Uneti broj se dodeljuje promenljivoj `a`. Ovde se koristi unarni operator `+` ispred `prompt()` kako bi se konvertovao uneseni tekst u broj.
-
-// 2. `if (isNaN(a)) { console.log("Uneta vrednost mora biti broj") }`: Ova linija koda proverava da li uneta vrednost, koja je dodeljena promenljivoj `a`, nije broj. `isNaN()` funkcija se koristi za proveru da li vrednost nije broj (NaN - Not-a-Number). Ako je uneta vrednost nije broj, ispisuje se poruka "Uneta vrednost mora biti broj".
-
-// 3. `else { console.log(a*a) }`: Ako uneta vrednost jeste broj, izvršava se ovaj blok koda. `a*a` računa kvadrat unete vrednosti `a`, a rezultat se prikazuje na konzoli pomoću `console.log()`.
-
-// Ukratko, kod koristi funkciju `prompt()` za unos broja od korisnika. Ako je uneta vrednost broj, ispisuje se kvadrat unete vrednosti. Ako uneta vrednost nije broj, ispisuje se poruka da mora biti unet broj.
 
 
 
@@ -219,106 +199,6 @@ ourArray.unshift("Happy");
 
 
 
-
-
-// DRUGI ZADATAK
-//  for (i=1;i<=100;i++) {
-//     if (i%3===0 && i%5===0) {
-//        console.log("FIZZ BUZZ")}
-//   else if (i%3===0) {
-//        console.log("FIZZ")
-//    } else if (i%5===0) {
-//        console.log("BUZZ")
-//    } 
-
-//    else console.log(i)
-
-/*Cilj problema je da se ispise niz brojeva od 1 do 100, ali umesto brojeva koji su deljivi sa 3 ispisuje se "FIZZ", umesto brojeva koji su deljivi sa 5 ispisuje se "BUZZ", a umesto brojeva koji su deljivi i sa 3 i sa 5 ispisuje se "FIZZ BUZZ".
-
-Sada ću detaljno objasniti kako funkcioniše ovaj kod:
-
-for (i = 1; i <= 100; i++): Ova linija koda koristi petlju for kako bi se prolazilo kroz brojeve od 1 do 100. Početna vrednost i je postavljena na 1, uslov za izlazak iz petlje je i <= 100, a nakon svake iteracije vrednost i se povećava za 1.
-
-if (i % 3 === 0 && i % 5 === 0): Ova linija proverava da li je broj i deljiv i sa 3 i sa 5. Ako jeste, ispisuje se "FIZZ BUZZ". Operator % se koristi za određivanje ostatka pri deljenju broja i sa 3 i 5. Ako je taj ostatak jednak 0, to znači da je broj deljiv sa 3 i 5.
-
-else if (i % 3 === 0): Ako prvi uslov nije ispunjen, ovaj uslov proverava da li je broj i deljiv sa 3. Ako jeste, ispisuje se "FIZZ".
-
-else if (i % 5 === 0): Ako ni prvi ni drugi uslov nisu ispunjeni, ovaj uslov proverava da li je broj i deljiv sa 5. Ako jeste, ispisuje se "BUZZ".
-
-else console.log(i): Ako ni jedan od prethodnih uslova nije ispunjen, ispisuje se vrednost broja i.
-
-Na kraju, kada se ovaj kod izvrši, dobijamo niz ispisanih vrednosti koji će izgledati ovako:
-
-1
-2
-FIZZ
-4
-BUZZ
-FIZZ
-7
-8
-FIZZ
-BUZZ
-11
-FIZZ
-13
-14
-FIZZ BUZZ
-16
-...
-i tako dalje, sve do 100.
-
-
-
-
-Regenerate response
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// TRECI ZADATAK
-let recenica ="Nakon danasnjeg testa cemo znati ko ce nastaviti sa drugim ciklusom it campa"
-
-let nova = ""
-for (i=0;i<recenica.length;i++) {
-    if (recenica[i] === "a" || recenica[i] === "e" || recenica[i] === "i" || recenica[i] === "o"|| recenica[i] === "u") {
-        nova+=recenica[i].toUpperCase()
-    }
-    else nova+=recenica[i]
-}
-console.log (nova+".")
-//Ovaj kod prolazi kroz svaki karakter u datoj rečenici `recenica` i proverava da li je taj karakter samoglasnik (a, e, i, o, u). Ako jeste, karakter se dodaje u promenljivu `nova` u velikom obliku (velika slova). U suprotnom, karakter se dodaje u `nova` bez ikakvih promena. Na kraju se rezultat prikazuje na konzoli sa dodatnom tačkom na kraju.
-
-Evo detaljnog objašnjenja koraka u kodu:
-
-1. `let recenica = "Nakon danasnjeg testa cemo znati ko ce nastaviti sa drugim ciklusom it campa"`: Ova linija koda definiše promenljivu `recenica` i dodeljuje joj vrednost datu rečenicu.
-
-2. `let nova = ""`: Ova linija koda definiše praznu promenljivu `nova` u koju će se dodavati karakteri tokom iteracije.
-
-3. `for (i=0;i<recenica.length;i++)`: Ova petlja `for` prolazi kroz svaki karakter u `recenica`. Početna vrednost brojača `i` je postavljena na 0, a uslov za izlazak iz petlje je `i<recenica.length`, što znači da će petlja se izvršavati sve dok je brojač manji od dužine rečenice.
-
-4. `if (recenica[i] === "a" || recenica[i] === "e" || recenica[i] === "i" || recenica[i] === "o"|| recenica[i] === "u")`: Ova linija proverava da li je trenutni karakter `recenica[i]` jedan od samoglasnika "a", "e", "i", "o" ili "u". Ako jeste, uslov je ispunjen.
-
-5. `nova += recenica[i].toUpperCase()`: Ako je karakter samoglasnik, dodaje se njegova velika verzija u promenljivu `nova` koristeći `.toUpperCase()` metodu. Ova metoda konvertuje karakter u veliko slovo.
-
-6. `else nova += recenica[i]`: Ako trenutni karakter nije samoglasnik, dodaje se u promenljivu `nova` bez ikakvih promena.
-
-7. `console.log(nova + ".")`: Na kraju se rezultat, koji je sadržan u promenljivoj `nova`, prikazuje na konzoli. Dodata je i tačka na kraju rečenice.
-
-Na taj način, originalna rečenica se prolazi karakter po karakter, a samoglasnici se zamenjuju velikim slovima. Rezultujuća rečenica se prikazuje na konzoli.
 
 
 

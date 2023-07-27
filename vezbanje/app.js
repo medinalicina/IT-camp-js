@@ -163,3 +163,16 @@ map jeste metoda koja odvaja tj pravi od jednog niza novi niz koji sadrzi samo p
 // Klase su šablon za kreiranje objekata. Oni inkapsuliraju podatke sa kodom za rad na tim podacima. Klase u JS-u su izgrađene na prototipovima, ali takođe imaju određenu sintaksu i semantiku koja je jedinstvena za klase.
 // konstruktor jeste posebna metoda koja se poziva prilikom stvaranja nove klase
 //let kada zelimo napraviti varijablu koju mozemo menjati a const varijablu koju ne mozemmo menjati, a varijable koje koriste var su vidljive na celom programu
+
+
+function kojihVise(recenica) {
+ let brojacMalih = 0;
+ let brojacVelikih = 0;
+ for (let i = 0; i < recenica.length; i++) {
+   if (recenica[i] !== recenica[i].toUpperCase()) {
+    brojacMalih++;
+           } else if (recenica[i] !== recenica[i].toLowerCase()) {
+             brojacVelikih++;
+           }
+         }
+       }
